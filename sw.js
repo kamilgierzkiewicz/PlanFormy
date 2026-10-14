@@ -1,5 +1,5 @@
 /* Plan Formy — service worker */
-const V = "planformy-1.3.0";
+const V = "planformy-1.3.1";
 const IMG = "planformy-img-v1";
 const CORE = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./icon-512-maskable.png", "./apple-touch-icon.png", "./favicon-32.png", "./clips/sidelunge.webp", "./clips/straddle.webp", "./clips/9090.webp", "./clips/cossack.webp", "./clips/wipers.webp", "./clips/cars.webp", "./clips/koci.webp", "./clips/tilt.webp", "./clips/mostek.webp", "./clips/klek.webp", "./clips/stojacy.webp"];
 

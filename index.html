@@ -217,6 +217,13 @@ body.lb-open{overflow:hidden}
   opacity:0;pointer-events:none;transition:.25s;white-space:nowrap;max-width:calc(100% - 32px);overflow:hidden;text-overflow:ellipsis}
 .fgtoast.on{opacity:1;transform:translateX(-50%) translateY(0)}
 
+/* przycisk Ustawienia — ten sam we wszystkich modułach */
+#app .setbtn{display:flex;align-items:center;gap:6px;height:40px;padding:0 14px 0 11px;border:0;border-radius:999px;background:var(--surface);color:var(--ink);
+  font:650 13.5px/1 var(--font);box-shadow:var(--shadow);cursor:pointer;flex-shrink:0;-webkit-tap-highlight-color:transparent}
+#app .setbtn svg{width:18px;height:18px;fill:none;stroke:var(--accent);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+#app .setbtn:active{transform:scale(.97)}
+@media (max-width:359px){#app .setbtn{padding:0 11px 0 9px;gap:5px;font-size:12.5px}}
+
 .pfmark{display:block;background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiIGFyaWEtaGlkZGVuPSJ0cnVlIj48ZGVmcz4KPHJhZGlhbEdyYWRpZW50IGlkPSJtQiIgY3g9IjUwJSIgY3k9IjMwJSIgcj0iODAlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMyRjYwNDYiLz48c3RvcCBvZmZzZXQ9Ii42IiBzdG9wLWNvbG9yPSIjMTczNTI3Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMEIxQTEyIi8+PC9yYWRpYWxHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJtRiIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI0ZGRkZGRiIvPjxzdG9wIG9mZnNldD0iLjU1IiBzdG9wLWNvbG9yPSIjRTdFQ0U2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOUZCMUE0Ii8+PC9saW5lYXJHcmFkaWVudD4KPGZpbHRlciBpZD0ibVMiIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE0MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIxNCIgc3RkRGV2aWF0aW9uPSIxNiIgZmxvb2QtY29sb3I9IiMwMDAiIGZsb29kLW9wYWNpdHk9Ii40NSIvPjwvZmlsdGVyPgo8ZmlsdGVyIGlkPSJtRyIgeD0iLTIwJSIgeT0iLTIwJSIgd2lkdGg9IjE0MCUiIGhlaWdodD0iMTQwJSI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMTQiIHJlc3VsdD0iYiIvPjxmZU1lcmdlPjxmZU1lcmdlTm9kZSBpbj0iYiIvPjxmZU1lcmdlTm9kZSBpbj0iU291cmNlR3JhcGhpYyIvPjwvZmVNZXJnZT48L2ZpbHRlcj4KPC9kZWZzPjxyZWN0IHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiIHJ4PSIyMzAiIGZpbGw9InVybCgjbUIpIi8+PGcgZmlsdGVyPSJ1cmwoI21HKSI+PHBhdGggZD0iTTU0MS4yIDE0MS4xIEEzNzIgMzcyIDAgMCAxIDc4My43IDI1OC4wIiBmaWxsPSJub25lIiBzdHJva2U9IiM4RkQxQTUiIHN0cm9rZS13aWR0aD0iNjAiLz48cGF0aCBkPSJNODIwLjEgMzAzLjYgQTM3MiAzNzIgMCAwIDEgODgwLjAgNTY2LjEiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0E2Q0M4RiIgc3Ryb2tlLXdpZHRoPSI2MCIvPjxwYXRoIGQ9Ik04NjcuMSA2MjMuMCBBMzcyIDM3MiAwIDAgMSA2OTkuMiA4MzMuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjQkRDNjc5IiBzdHJva2Utd2lkdGg9IjYwIi8+PHBhdGggZD0iTTY0Ni42IDg1OC44IEEzNzIgMzcyIDAgMCAxIDM3Ny40IDg1OC44IiBmaWxsPSJub25lIiBzdHJva2U9IiNEMEJCNjIiIHN0cm9rZS13aWR0aD0iNjAiLz48cGF0aCBkPSJNMzI0LjggODMzLjUgQTM3MiAzNzIgMCAwIDEgMTU2LjkgNjIzLjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0UzQjA0QiIgc3Ryb2tlLXdpZHRoPSI2MCIvPjxwYXRoIGQ9Ik0xNDQuMCA1NjYuMSBBMzcyIDM3MiAwIDAgMSAyMDMuOSAzMDMuNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMkM0QjNBIiBzdHJva2Utd2lkdGg9IjYwIi8+PHBhdGggZD0iTTI0MC4zIDI1OC4wIEEzNzIgMzcyIDAgMCAxIDQ4Mi44IDE0MS4xIiBmaWxsPSJub25lIiBzdHJva2U9IiMyQzRCM0EiIHN0cm9rZS13aWR0aD0iNjAiLz48L2c+PGcgZmlsdGVyPSJ1cmwoI21TKSI+PGc+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTEyIDUyMCkgc2NhbGUoLjgpIHRyYW5zbGF0ZSgtNTEyIC01MTIpIj48Zz48cmVjdCB4PSIzMDAiIHk9IjIzNiIgd2lkdGg9IjQyNCIgaGVpZ2h0PSIxOCIgcng9IjkiIGZpbGw9InVybCgjbUYpIi8+PHJlY3QgeD0iMzA2IiB5PSIxNzYiIHdpZHRoPSIzNCIgaGVpZ2h0PSIxMzgiIHJ4PSIxMiIgZmlsbD0idXJsKCNtRikiLz48cmVjdCB4PSI2ODQiIHk9IjE3NiIgd2lkdGg9IjM0IiBoZWlnaHQ9IjEzOCIgcng9IjEyIiBmaWxsPSJ1cmwoI21GKSIvPjxyZWN0IHg9IjM0NiIgeT0iMTk4IiB3aWR0aD0iMjgiIGhlaWdodD0iOTQiIHJ4PSIxMCIgZmlsbD0idXJsKCNtRikiLz48cmVjdCB4PSI2NTAiIHk9IjE5OCIgd2lkdGg9IjI4IiBoZWlnaHQ9Ijk0IiByeD0iMTAiIGZpbGw9InVybCgjbUYpIi8+PHBhdGggZD0iTTQzNiA0MTIgTDM4OCAyNTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNtRikiIHN0cm9rZS13aWR0aD0iNTYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik01ODggNDEyIEw2MzYgMjUyIiBmaWxsPSJub25lIiBzdHJva2U9InVybCgjbUYpIiBzdHJva2Utd2lkdGg9IjU2IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L2c+PGNpcmNsZSBjeD0iNTEyIiBjeT0iMzIyIiByPSI1MCIgZmlsbD0idXJsKCNtRikiLz48cGF0aCBkPSJNNDI2IDM4NCBRNTEyIDM2NiA1OTggMzg0IFE2MzIgMzkyIDYyNCA0MzAgTDU4MCA1OTYgUTUxMiA2MTIgNDQ0IDU5NiBMNDAwIDQzMCBRMzkyIDM5MiA0MjYgMzg0IFoiIGZpbGw9InVybCgjbUYpIi8+PHBhdGggZD0iTTQ4NCA2MDAgTDQ1MiA4MTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNtRikiIHN0cm9rZS13aWR0aD0iNjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik01NDAgNjAwIEw1NzIgODEyIiBmaWxsPSJub25lIiBzdHJva2U9InVybCgjbUYpIiBzdHJva2Utd2lkdGg9IjY0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L2c+PC9nPjwvZz48L3N2Zz4=") center/contain no-repeat;border-radius:22.5%;box-shadow:0 1px 2px rgba(0,0,0,.12),0 4px 12px rgba(23,53,39,.18)}
 :is(#m-trening,#m-dzis,#shell) .install{display:none;align-items:center;gap:10px;background:var(--accent-soft);border-radius:20px;
     padding:13px 15px;margin:0 0 13px;color:var(--ink);font-size:13px;line-height:1.45}
@@ -523,11 +530,12 @@ body.lb-open{overflow:hidden}
 #m-dzis .install{margin-bottom:13px}
 #m-dzis .brandhdr{gap:10px;margin-bottom:14px}
 #m-dzis .brandhdr .brand{width:46px;height:46px;flex-shrink:0}
-#m-dzis .brandhdr .bt{flex-grow:1;min-width:0;font:700 clamp(21px,6.6vw,26px)/1 var(--font);letter-spacing:-.035em;color:var(--ink);white-space:nowrap}
-#m-dzis .brandhdr .bt span{color:var(--accent)}
+#m-dzis .brandhdr .bt{flex-grow:1;min-width:0;font:700 clamp(20px,6.4vw,26px)/1 var(--font);letter-spacing:-.035em;color:var(--ink);white-space:nowrap}
+#m-dzis .brandhdr .bt .bn>span{color:var(--accent)}
+#m-dzis .brandhdr .bt .ver{display:block;background:none;padding:0;margin-top:4px;font:600 11.5px/1 var(--font);letter-spacing:0;color:var(--dim);font-variant-numeric:tabular-nums}
 #m-dzis .dzHead{margin:0 2px 13px}
 #m-dzis .dzHead .dzDate{margin:5px 0 0;font:700 20px/1.2 var(--font);letter-spacing:-.02em;color:var(--ink)}
-@media (max-width:359px){#m-dzis .brandhdr .ver{display:none}}
+@media (max-width:359px){#m-dzis .brandhdr .brand{width:40px;height:40px}}
 #m-dzis .tl-x.tip{color:var(--mut);font-weight:600}
 /* check-in */
 #m-dzis .ci{padding:15px 16px 14px;margin-bottom:13px}
@@ -1370,8 +1378,8 @@ body.lb-open{overflow:hidden}
 <section class="mod" id="m-dzis">
 <div class="wrap">
   <div class="install" id="dzInstall"><span><b>Dodaj jako apkę:</b> Udostępnij → <b>Dodaj do ekranu początkowego</b>. Działa offline i pewniej trzyma dane.</span><button class="x" id="dzInstallX">OK</button></div>
-  <header class="brandhdr"><span class="brand pfmark"></span><div class="bt">Plan <span>Formy</span><i class="syncdot" data-syncdot data-s="off"></i></div><span class="ver">v1.3.0</span>
-    <button class="iconbtn" id="openCore" aria-label="Ustawienia wspólne"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="5" cy="12" r="1.9"></circle><circle cx="12" cy="12" r="1.9"></circle><circle cx="19" cy="12" r="1.9"></circle></svg></button>
+  <header class="brandhdr"><span class="brand pfmark"></span><div class="bt"><div class="bn">Plan <span>Formy</span><i class="syncdot" data-syncdot data-s="off"></i></div><span class="ver">v1.3.1</span></div>
+    <button class="setbtn" id="openCore"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg><span>Ustawienia</span></button>
   </header>
   <div class="dzHead"><span class="micro">Dziś</span><div class="dzDate" id="dzDate"></div></div>
   <div class="dzWeek" id="dzWeek"></div>
@@ -1382,8 +1390,8 @@ body.lb-open{overflow:hidden}
   <div id="dzAlerts"></div>
   <div class="grp-h">Plan dnia</div>
   <div id="dzLine"></div>
-  <div class="foot">Stuknij dzień tygodnia, żeby przełączyć trening. Godziny i plan tygodnia: ⋯</div>
-</div><footer class="appfoot"><span class="afm pfmark"></span><div class="af-n">Plan <span>Formy</span> <i>v1.3.0</i></div><div>2026 @ Created by MVT - Kamil Gierzkiewicz</div><div>Wszelkie prawa zastrzeżone</div></footer>
+  <div class="foot">Stuknij dzień tygodnia, żeby przełączyć trening. Godziny i plan tygodnia: ⚙ Ustawienia</div>
+</div><footer class="appfoot"><span class="afm pfmark"></span><div class="af-n">Plan <span>Formy</span> <i>v1.3.1</i></div><div>2026 @ Created by MVT - Kamil Gierzkiewicz</div><div>Wszelkie prawa zastrzeżone</div></footer>
 </section>
 <section class="mod" id="m-trening" hidden>
 <div class="wrap">
@@ -1392,9 +1400,7 @@ body.lb-open{overflow:hidden}
     <button class="iconbtn" id="openBil" aria-label="Bilans partii">
       <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19v-7"/><path d="M12 19V5"/><path d="M19 19v-4"/></svg>
     </button>
-    <button class="iconbtn" id="openSet" aria-label="Ustawienia i dane">
-      <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="5" cy="12" r="1.9"></circle><circle cx="12" cy="12" r="1.9"></circle><circle cx="19" cy="12" r="1.9"></circle></svg>
-    </button>
+    <button class="setbtn" id="openSet"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg><span>Ustawienia</span></button>
   </header>
 
   <div id="backupTop"></div>
@@ -1436,7 +1442,7 @@ body.lb-open{overflow:hidden}
   <button class="listbtn" id="bilEnd"><span class="nm">Bilans partii</span><span class="sub">co przepracowane →</span></button>
 
   <div class="foot">
-    Dane zapisują się lokalnie na tym urządzeniu. Kopia samego treningu: menu ⋯ · pełna kopia wszystkich modułów: ekran Dziś → ⋯<br>
+    Dane zapisują się lokalnie na tym urządzeniu. Kopia samego treningu: Trening → ⚙ Ustawienia · pełna kopia wszystkich modułów: Dziś → ⚙ Ustawienia<br>
     Animacje: free-exercise-db · wideo: MuscleWiki · mapa mięśni: react-native-body-highlighter (MIT)
   </div>
 </div>
@@ -1545,7 +1551,7 @@ body.lb-open{overflow:hidden}
     <div id="modalLinks"></div>
   </div>
 </div>
-<footer class="appfoot"><span class="afm pfmark"></span><div class="af-n">Plan <span>Formy</span> <i>v1.3.0</i></div><div>2026 @ Created by MVT - Kamil Gierzkiewicz</div><div>Wszelkie prawa zastrzeżone</div></footer>
+<footer class="appfoot"><span class="afm pfmark"></span><div class="af-n">Plan <span>Formy</span> <i>v1.3.1</i></div><div>2026 @ Created by MVT - Kamil Gierzkiewicz</div><div>Wszelkie prawa zastrzeżone</div></footer>
 </section>
 <section class="mod" id="m-dieta" hidden>
 <div class="dtop"><header><h1>Dieta</h1><span class="dsub" id="dSub"></span></header><div class="dtabs" id="dTabs"></div></div>
@@ -1686,17 +1692,17 @@ body.lb-open{overflow:hidden}
     <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
   </button>
   <div class="sheet-in" id="sheetIn"></div>
-</div><footer class="appfoot"><span class="afm pfmark"></span><div class="af-n">Plan <span>Formy</span> <i>v1.3.0</i></div><div>2026 @ Created by MVT - Kamil Gierzkiewicz</div><div>Wszelkie prawa zastrzeżone</div></footer>
+</div><footer class="appfoot"><span class="afm pfmark"></span><div class="af-n">Plan <span>Formy</span> <i>v1.3.1</i></div><div>2026 @ Created by MVT - Kamil Gierzkiewicz</div><div>Wszelkie prawa zastrzeżone</div></footer>
 </section>
 <section class="mod" id="m-suple" hidden>
 <header class="top">
-<div class="tbar"><h1>Suplementy</h1><button id="gear" class="gbtn" aria-label="Ustawienia"><svg class="i" viewBox="0 0 24 24"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></svg></button></div>
+<div class="tbar"><h1>Suplementy</h1><button class="setbtn" id="gear"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg><span>Ustawienia</span></button></div>
 <div id="sub" class="sub"></div><span id="ttl" hidden></span>
 <nav class="tabs" id="tabs"><button data-tab="dzis">Dziś</button><button data-tab="zapasy">Zapasy</button><button data-tab="zakupy">Zakupy</button><button data-tab="zasady">Zasady</button></nav>
 </header>
 <main id="view"></main>
 <dialog id="dlg"></dialog>
-<div id="toast"></div><footer class="appfoot"><span class="afm pfmark"></span><div class="af-n">Plan <span>Formy</span> <i>v1.3.0</i></div><div>2026 @ Created by MVT - Kamil Gierzkiewicz</div><div>Wszelkie prawa zastrzeżone</div></footer>
+<div id="toast"></div><footer class="appfoot"><span class="afm pfmark"></span><div class="af-n">Plan <span>Formy</span> <i>v1.3.1</i></div><div>2026 @ Created by MVT - Kamil Gierzkiewicz</div><div>Wszelkie prawa zastrzeżone</div></footer>
 </section>
 <section class="mod" id="m-mob" hidden>
 <header>
@@ -1809,7 +1815,7 @@ body.lb-open{overflow:hidden}
   </div>
 </div>
 
-<div class="toast" id="toast"></div><footer class="appfoot"><span class="afm pfmark"></span><div class="af-n">Plan <span>Formy</span> <i>v1.3.0</i></div><div>2026 @ Created by MVT - Kamil Gierzkiewicz</div><div>Wszelkie prawa zastrzeżone</div></footer>
+<div class="toast" id="toast"></div><footer class="appfoot"><span class="afm pfmark"></span><div class="af-n">Plan <span>Formy</span> <i>v1.3.1</i></div><div>2026 @ Created by MVT - Kamil Gierzkiewicz</div><div>Wszelkie prawa zastrzeżone</div></footer>
 </section>
 </div>
 <div id="shell">
@@ -1831,7 +1837,7 @@ body.lb-open{overflow:hidden}
 /* ══════════ FORMA · rdzeń: wspólny stan dnia, motyw, nawigacja ══════════ */
 (function(){
 'use strict';
-const APP = window.APP = { ver: "1.3.0", mod: {}, cur: "dzis" };
+const APP = window.APP = { ver: "1.3.1", mod: {}, cur: "dzis" };
 
 /* każdy moduł dostaje własny „document” — zapytania i kliknięcia tylko w jego sekcji */
 APP.scope = function(root){
@@ -5045,7 +5051,7 @@ function editProd(p){
 }
 document.getElementById('gear').addEventListener('click',()=>{
  openDlg(`<form method="dialog"><h3>Ustawienia</h3>
- <p class="ds" style="margin-top:10px">Dni treningowe do liczenia zapasów: <b>${APP.core.trainPerWeek()||S.set.trainDays} / tydz.</b> — z planu tygodnia (Dziś → ⋯).</p>
+ <p class="ds" style="margin-top:10px">Dni treningowe do liczenia zapasów: <b>${APP.core.trainPerWeek()||S.set.trainDays} / tydz.</b> — z planu tygodnia (Dziś → ⚙ Ustawienia).</p>
  <label>Ostrzegaj, gdy zostaje mniej niż (dni)<input name="al" inputmode="numeric" value="${S.set.alert}"></label>
  <p class="ds" style="margin-top:12px">Dane są tylko na tym telefonie i iPhone potrafi je wyczyścić. Rób kopię raz w miesiącu.${S.ui.lastBackup?' Ostatnia kopia: '+S.ui.lastBackup+'.':''}</p>
  <div class="row2"><button type="button" class="ghost" data-dact="exp">Eksport kopii</button><button type="button" class="ghost" data-dact="imp">Import kopii</button></div>
