@@ -1,6 +1,6 @@
-# Plan Formy 1.3.1
+# Plan Formy 1.7.0
 
-Trening, dieta keto, protokół suplementacji i mobilność w jednej PWA.
+Trening, dieta keto, protokół suplementacji, mobilność i oddech w jednej PWA.
 © 2026 Kamil Gierzkiewicz (MVT). Wszelkie prawa zastrzeżone.
 
 ## Wgranie na GitHub Pages
@@ -14,6 +14,31 @@ Trening, dieta keto, protokół suplementacji i mobilność w jednej PWA.
 - Dziś → ⚙ Ustawienia → Synchronizacja → repo `LOGIN/PlanFormy-data` + token → Połącz.
 - Token zostaje tylko na urządzeniu — nie trafia do repo ani do kopii zapasowych. Apka odmówi połączenia z publicznym repo.
 - Przy konflikcie wygrywa nowsza zmiana danego modułu.
+
+## Oddech (metoda Wima Hofa)
+- Nagrania są tylko w prywatnym repo danych: `PlanFormy-data/oddech/` (glos.m4a, poziom-1…4.m4a, razem ok. 39 MB).
+- W aplikacji: Oddech → ⚙ Ustawienia → Pobierz wszystkie. Pobierasz raz na każde urządzenie, potem działają offline.
+- Historia sesji synchronizuje się jak reszta danych (klucz `forma.oddech.v1`).
+
+## Post przerywany
+- Dieta → Post: schemat 12:12 … 23:1, licznik startuje sam 30 min po kolacji; kafel z fazą na ekranie Dziś.
+- „Dopasuj godziny posiłków”: okno kończy się kolacją, posiłek 1 i obiad (oraz suple i plan dnia) przesuwają się do okna. Wyłączenie przywraca poprzednie godziny.
+- Historia postów synchronizuje się jak reszta danych (klucz `forma.post.v1`).
+
+## Kompas: wyniki, tłuszcze, życie
+- Wyniki badań (Pomiar → Wyniki badań albo alert na Dziś): lipidogram, ApoB, Lp(a), glukoza, HbA1c, ALT/AST, TSH; non-HDL i TG/HDL liczone same; przypomnienie o kontroli 8–12 tyg. po zmianie diety. Klucz `forma.lab.v1`.
+- Dieta → Plan: jakość tłuszczu (nasycone g / % energii, proporcja nienasycone : nasycone, główne źródła, zamiennik).
+- Check-in: głód i trawienie (opcjonalnie). Pomiar tygodniowy: ciśnienie.
+- Przegląd 8 tygodni: cel, co się poprawiło / pogorszyło, podpowiedzi, dwa pytania, „najmniejszy sensowny ruch”.
+- Dziś: dzień w trasie / trudny dzień (minimum + licznik białka + jedzenie w trasie), „Zjadłem poza planem” (powrót bez karania), etapy keto, „po co”. Klucz `forma.zycie.v1`.
+- Post: opcjonalny pomiar glukozy i ketonów.
+
+## Trening: postęp i trasa
+- Ćwiczenia kontrolne (Trening → Ćwiczenia kontrolne): jedno na partię na cały rok, wykres e1RM, zastój → „+1 seria” zamiast zmiany planu.
+- Pod ćwiczeniem „Cel dziś” (ciężar / powtórzenia do pobicia), w polach wartości z ostatniej sesji.
+- Gotowość z wyników: dwa treningi z rzędu słabiej niż tydzień wcześniej → ostrzeżenie.
+- Tydzień utrzymania (trasa) w Bilansie partii + plan „Trasa · utrzymanie” (bez sprzętu / gumy + hantle).
+- Pomiar: tempo wagi na tle pasma celu z Diety (masa: zależnie od stażu).
 
 ## Pliki
 - `index.html` — cała aplikacja
