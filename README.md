@@ -1,4 +1,4 @@
-# Plan Formy 1.7.0
+# Plan Formy 1.9.0
 
 Trening, dieta keto, protokół suplementacji, mobilność i oddech w jednej PWA.
 © 2026 Kamil Gierzkiewicz (MVT). Wszelkie prawa zastrzeżone.
@@ -39,6 +39,29 @@ Trening, dieta keto, protokół suplementacji, mobilność i oddech w jednej PWA
 - Gotowość z wyników: dwa treningi z rzędu słabiej niż tydzień wcześniej → ostrzeżenie.
 - Tydzień utrzymania (trasa) w Bilansie partii + plan „Trasa · utrzymanie” (bez sprzętu / gumy + hantle).
 - Pomiar: tempo wagi na tle pasma celu z Diety (masa: zależnie od stażu).
+
+## Dieta: własne posiłki (1.9.0)
+- Pod każdym posiłkiem: „Własny posiłek” (zamiast dania z planu) i „＋ Składnik do dania”. Sekcja „Dodatkowe posiłki” na przekąski.
+- Nowy posiłek: kcal i makro albo ze składników; „Moje posiłki” do ponownego użycia, własne produkty (makro na 100 g).
+- Ze zrzutu (np. Fitatu): wklejony tekst z Live Text albo „Wybierz zrzut” (odczyt w telefonie, pierwsze użycie pobiera ok. 7 MB).
+- Własne pozycje są odejmowane od celu dnia, dania z planu się zmniejszają. Przekroczenie puli keto — ostrzeżenie, bez blokady.
+
+## Pomiar i treningi dodatkowe (1.8.2)
+- Obwody ciała (szyja, klatka, talia, brzuch, biodra, ramię, udo, łydka), zawartość tłuszczu (US Navy albo ręcznie), „Jak się mierzyć?”.
+- Dotychczasowa „talia na wysokości pępka” przeszła do pola „Brzuch”.
+- Dziś: dodatkowy trening (rodzaj, minuty, aktywne kcal). Dieta → Ja: „Uwzględnij kalorie z dodatkowych treningów” (50/75/100%).
+
+## Okna i dane (1.8.1)
+- „Zamknij ✕” w każdym oknie. Dziś → ⚙ Ustawienia → „Wyczyść dane…”: wybrane moduły, przy synchronizacji także w repo i na Macu.
+
+## Redukcja: kroki, cel wagi, realne zero
+- Kroki: Skrót Zdrowie 1.8.0 dopisuje kroki z Apple Watch (24 h przed porannym zapisem → wczoraj). Kafel na Dziś, karta w Pomiarze (trasa / dom osobno, wpis ręczny), alarm przy spadku ≥25% na redukcji, wiersze w Kompasie.
+- Dieta → Ja: cel wagi z terminem (tempo, limit 1%/tydz., deficyt, „Wpisz kcal”), realne zero z trendu wagi i kalorii z planu, plan po dojściu do celu.
+- Dieta → Pomoc: głód na redukcji, brak głodu na keto, koniec redukcji, kroki.
+
+## Oddech: muzyka w tle (własna sesja)
+- „Spotify”: muzyka z innej aplikacji gra dalej, Plan Formy gra na niej (przełącznik wyciszenia wyłączony).
+- „Moje pliki”: MP3/M4A w `PlanFormy-data/oddech/muzyka/` → Oddech → ⚙ Ustawienia → Sprawdź repo → Pobierz. Ściszają się pod komendy.
 
 ## Pliki
 - `index.html` — cała aplikacja
